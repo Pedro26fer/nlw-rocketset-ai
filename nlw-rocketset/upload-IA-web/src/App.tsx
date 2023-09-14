@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "./components/ui/button";
 import { FileVideo, Github, Upload, Wand2 } from "lucide-react";
 import { Separator } from "./components/ui/separator";
 import { Textarea } from "./components/ui/textarea";
@@ -146,3 +146,4 @@ export function App() {
     </div>
   );
 }
+
