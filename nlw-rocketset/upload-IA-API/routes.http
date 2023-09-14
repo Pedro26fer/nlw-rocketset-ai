@@ -22,7 +22,7 @@ Content-Type: application/json
 
 
 {
-    "prompt": "upload, mp3, file, test"
+    "prompt": "upload, mp3 file, test"
 }
 
 
