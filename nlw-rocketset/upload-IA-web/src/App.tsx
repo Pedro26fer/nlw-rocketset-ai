@@ -1,5 +1,5 @@
 import { Button } from "./components/ui/button";
-import { Github, Upload, Wand2 } from "lucide-react";
+import { Github, Wand2 } from "lucide-react";
 import { Separator } from "./components/ui/separator";
 import { Textarea } from "./components/ui/textarea";
 import { Label } from "./components/ui/label";
@@ -12,6 +12,7 @@ import {
 } from "./components/ui/select";
 import { Slider } from "./components/ui/slider";
 import { VideoInput } from "./components/video-input-form";
+import { PromptSelect } from "./components/select-prompt";
 
 export function App() {
   return (
@@ -63,16 +64,9 @@ export function App() {
           <form className="space-y-6">
             <div className="space-y-2">
               <Label>Prompt</Label>
-              <Select>
-                <SelectTrigger>
-                  <SelectValue placeholder="Selecione um prompt..." />
-                </SelectTrigger>
-
-                <SelectContent>
-                  <SelectItem value="title">Título do Youtube</SelectItem>
-                  <SelectItem value="title">Descrição do Youtube</SelectItem>
-                </SelectContent>
-              </Select>
+              <div>
+                <PromptSelect/>
+              </div>
             </div>
 
             <div className="space-y-2">
