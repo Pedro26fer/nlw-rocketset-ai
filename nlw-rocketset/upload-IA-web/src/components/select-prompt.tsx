@@ -8,7 +8,11 @@ import { useEffect, useState } from "react";
     template: string
   }
 
-export function PromptSelect() {
+  interface PromptSelectesProps {
+    onPromptSelected: (template: string) => void
+  }
+
+export function PromptSelect(props: PromptSelectesProps) {
 
     const [prompts,setPrompts] = useState<Prompt[] | null>(null)
 
@@ -17,8 +21,18 @@ export function PromptSelect() {
         .then(response => setPrompts(response.data))
     },[])
 
+    const handlePromptSelected = (promptId: string) => {
+        const selectedPrompt = prompts?.find(prompt => prompt.id == promptId )
+
+        if (!selectedPrompt){
+            return
+        }
+
+        props.onPromptSelected(selectedPrompt?.template)
+    }
+
     return(
-        <Select>
+        <Select onValueChange={handlePromptSelected}>
         <SelectTrigger>
             <SelectValue placeholder="Selecione um prompt..." />
         </SelectTrigger>
