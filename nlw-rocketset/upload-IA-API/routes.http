@@ -17,7 +17,7 @@ Content-Type: audio/mpeg
 
 ###
 # @name create-transcription
-POST  http://localhost:3333/videos/1d2a3664-d1b4-42b2-8c03-3bffba83b244/transcription
+POST  http://localhost:3333/videos/3dcb0943-4eff-4e97-9bd0-660422bb4b73/transcription
 Content-Type: application/json
 
 
@@ -31,9 +31,8 @@ Content-Type: application/json
 POST  http://localhost:3333/ai/generate
 Content-Type: application/json
 
-
 {
-    "videoId": "ae86c0f7-5f4a-44d3-937f-1c6f88cf7d10",
+    "videoId": "3dcb0943-4eff-4e97-9bd0-660422bb4b73",
     "temperature": 0.5,
-    "template": "Gere um resumo sucinto da transcrição do video informada a seguir:'''{trancription}'''"
+    "prompt": "Gere um resumo sucinto da transcrição do video informada a seguir:'''{trancription}'''"
 }
