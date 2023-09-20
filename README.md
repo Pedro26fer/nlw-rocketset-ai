@@ -28,4 +28,4 @@ Siga as etapas abaixo para executar o projeto em sua máquina:
 Certifique-se de que todas as etapas foram concluídas com sucesso para executar o projeto em sua máquina.
 
 ## Contato
-Se você tiver alguma dúvida ou precisar entrar em contato, sinta-se à vontade para enviar um e-mail para p2698fernandes@gmail.com.
+Se você tiver alguma dúvida ou precisar entrar em contato, sinta-se à vontade para enviar um e-mail para:   p2698fernandes@gmail.com.
